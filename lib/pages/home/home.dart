@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:animate_do/animate_do.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -81,64 +82,67 @@ class _HomeState extends ConsumerState<Home>
                       key: _homeProvider.portfolioKey,
                       height: 100.0,
                     ),
-                    Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              context.goNamed(
-                                Routes.simulation,
-                              );
-                            },
-                            child: Text(
-                              "My Works",
-                              style: GoogleFonts.josefinSans(
-                                fontWeight: FontWeight.w900,
-                                fontSize: 36,
+                    FadeInLeft(
+                      duration: const Duration(milliseconds: 1900),
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                context.goNamed(
+                                  Routes.simulation,
+                                );
+                              },
+                              child: Text(
+                                "My Works",
+                                style: GoogleFonts.josefinSans(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 36,
+                                ),
                               ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            "Here are some of my Previous Work :)",
-                            style: GoogleFonts.josefinSans(
-                              color: Colors.grey[400],
-                              fontSize: 14,
+                            const SizedBox(
+                              height: 5,
                             ),
-                          ),
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: Container(
-                              margin: const EdgeInsets.only(right: 10),
-                              child: InkWell(
-                                onTap: () {
-                                  context.goNamed(
-                                    Routes.myWorks,
-                                  );
-                                },
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    "View All",
-                                    style: GoogleFonts.josefinSans(
-                                      color: kPrimaryColor,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 14,
-                                      decoration: TextDecoration.underline,
+                            Text(
+                              "Here are some of my Previous Work :)",
+                              style: GoogleFonts.josefinSans(
+                                color: Colors.grey[400],
+                                fontSize: 14,
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                child: InkWell(
+                                  onTap: () {
+                                    context.goNamed(
+                                      Routes.myWorks,
+                                    );
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "View All",
+                                      style: GoogleFonts.josefinSans(
+                                        color: kPrimaryColor,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 14,
+                                        decoration: TextDecoration.underline,
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 15,
-                          )
-                        ],
+                            const SizedBox(
+                              height: 15,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     ProjectSection(

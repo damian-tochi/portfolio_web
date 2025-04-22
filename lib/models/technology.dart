@@ -23,6 +23,8 @@ class TechnologyConstants {
       TechnologyModel("Java", AppConstants.javaImage);
   static TechnologyModel javascript =
       TechnologyModel("Javascript", AppConstants.javascriptImage);
+  static TechnologyModel nestJs =
+  TechnologyModel("Nest JS", AppConstants.nestJsImage);
   static TechnologyModel swift =
       TechnologyModel("Swift", AppConstants.swiftImage);
   static TechnologyModel sceneKit =
@@ -35,5 +37,6 @@ class TechnologyConstants {
     java,
     python,
     javascript,
+    nestJs,
   ];
 }

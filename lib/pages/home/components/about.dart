@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,12 +25,14 @@ class _AboutSectionState extends State<AboutSection> {
   }
 
   Widget _buildUi(double width) {
-    return Center(
+    return FadeInLeft(
+      duration: const Duration(milliseconds: 1900),
+      child: Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Flex(
             direction:
-                constraints.maxWidth > 720 ? Axis.horizontal : Axis.vertical,
+            constraints.maxWidth > 720 ? Axis.horizontal : Axis.vertical,
             children: [
               Expanded(
                 flex: 3,
@@ -92,46 +95,46 @@ class _AboutSectionState extends State<AboutSection> {
                           child: Row(
                             children: TechnologyConstants.technologyLearned
                                 .map((e) => MouseRegion(
-                                      cursor: SystemMouseCursors.click,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: ref
-                                                  .watch(themeProvider)
-                                                  .isDarkMode
-                                              ? Colors.grey[800]
-                                              : Colors.grey[200],
-                                          borderRadius:
-                                              BorderRadius.circular(4.0),
+                              cursor: SystemMouseCursors.click,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: ref
+                                      .watch(themeProvider)
+                                      .isDarkMode
+                                      ? Colors.grey[800]
+                                      : Colors.grey[200],
+                                  borderRadius:
+                                  BorderRadius.circular(4.0),
+                                ),
+                                margin: const EdgeInsets.symmetric(
+                                    horizontal: 5),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 8.0, vertical: 6),
+                                child: InkWell(
+                                  onTap: () {},
+                                  child: Center(
+                                    child: Row(
+                                      children: [
+                                        SizedBox(
+                                            width: 20,
+                                            height: 20,
+                                            child: Image.asset(e.logo)),
+                                        const SizedBox(
+                                          width: 10,
                                         ),
-                                        margin: const EdgeInsets.symmetric(
-                                            horizontal: 5),
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 8.0, vertical: 6),
-                                        child: InkWell(
-                                          onTap: () {},
-                                          child: Center(
-                                            child: Row(
-                                              children: [
-                                                SizedBox(
-                                                    width: 20,
-                                                    height: 20,
-                                                    child: Image.asset(e.logo)),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                Text(
-                                                  e.name,
-                                                  style: const TextStyle(
-                                                    fontSize: 12.0,
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
+                                        Text(
+                                          e.name,
+                                          style: const TextStyle(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                      ),
-                                    ))
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ))
                                 .toList(),
                           ),
                         ),
@@ -162,6 +165,6 @@ class _AboutSectionState extends State<AboutSection> {
           );
         },
       ),
-    );
+    ),);
   }
 }

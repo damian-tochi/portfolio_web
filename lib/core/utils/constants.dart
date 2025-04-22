@@ -42,6 +42,7 @@ class AppConstants {
   static const javaImage = _techImages + "java.png";
   static const androidImage = _techImages + "android_icon.png";
   static const kotlinImage = _techImages + "kotlin_Icon.png";
+  static const nestJsImage = _techImages + "nestjs-logo.png";
 
 
   static const _projectsImages = _images + "projects/";

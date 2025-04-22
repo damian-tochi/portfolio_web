@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -6,7 +7,6 @@ import 'package:my_portfolio/core/utils/constants.dart';
 import 'package:my_portfolio/models/carousel_item_model.dart';
 import 'package:my_portfolio/provider/theme.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 
 List<CarouselItemModel> carouselItems(
         double carouselContainerHeight, BuildContext context) =>
@@ -17,137 +17,144 @@ List<CarouselItemModel> carouselItems(
           height: carouselContainerHeight,
           child: Stack(
             children: [
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      "Mobile Engineer".toUpperCase(),
-                      style: GoogleFonts.josefinSans(
-                        color: kPrimaryColor,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 18.0,
-                        letterSpacing: 2,
+              FadeInUp(
+                duration: const Duration(milliseconds: 1900),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        "Mobile Engineer".toUpperCase(),
+                        style: GoogleFonts.josefinSans(
+                          color: kPrimaryColor,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 18.0,
+                          letterSpacing: 2,
+                        ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 18.0,
-                    ),
-                    Text(
-                      "Damian Tochukwu".toUpperCase(),
-                      style: GoogleFonts.josefinSans(
-                        fontSize: 40.0,
-                        fontWeight: FontWeight.w900,
-                        height: 1.3,
-                        letterSpacing: 2.3,
+                      const SizedBox(
+                        height: 18.0,
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10.0,
-                    ),
-                    const Row(
-                      children: [
-                        Text(
-                          "Software Engineer, ",
-                          style: TextStyle(
+                      Text(
+                        "Damian Tochukwu".toUpperCase(),
+                        style: GoogleFonts.josefinSans(
+                          fontSize: 40.0,
+                          fontWeight: FontWeight.w900,
+                          height: 1.3,
+                          letterSpacing: 2.3,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10.0,
+                      ),
+                      const Row(
+                        children: [
+                          Text(
+                            "Software Engineer, ",
+                            style: TextStyle(
+                              color: kCaptionColor,
+                              fontSize: 15.0,
+                              height: 1.0,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Icons.location_on,
                             color: kCaptionColor,
-                            fontSize: 15.0,
-                            height: 1.0,
+                            size: 14,
                           ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.location_on,
-                          color: kCaptionColor,
-                          size: 14,
-                        ),
-                        SizedBox(
-                          width: 2,
-                        ),
-                        Text(
-                          "Lagos, Nigeria",
-                          style: TextStyle(
-                            color: kCaptionColor,
-                            fontSize: 15.0,
-                            height: 1.0,
+                          SizedBox(
+                            width: 2,
                           ),
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 25.0,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        borderRadius: BorderRadius.circular(8.0),
+                          Text(
+                            "Lagos, Nigeria",
+                            style: TextStyle(
+                              color: kCaptionColor,
+                              fontSize: 15.0,
+                              height: 1.0,
+                            ),
+                          )
+                        ],
                       ),
-                      height: 48.0,
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 28.0,
+                      const SizedBox(
+                        height: 25.0,
                       ),
-                      child: TextButton(
-                        onPressed: () {
-                          openWhatsApp(
-                            phoneNumber: '+2348066855471',
-                            message: "Hello Damian!\nI got your contact from your website.\nLet's talk",
-                          );
-                        },
-                        child: Text(
-                          "Let's Talk",
-                          style: TextStyle(
-                            color: Colors.grey[800],
-                            fontSize: 13.0,
-                            fontWeight: FontWeight.bold,
+                      Container(
+                        decoration: BoxDecoration(
+                          color: kPrimaryColor,
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        height: 48.0,
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 28.0,
+                        ),
+                        child: TextButton(
+                          onPressed: () {
+                            openWhatsApp(
+                              phoneNumber: '+2348066855471',
+                              message:
+                                  "Hello Damian!\nI got your contact from your website.\nLet's talk",
+                            );
+                          },
+                          child: Text(
+                            "Let's Talk",
+                            style: TextStyle(
+                              color: Colors.grey[800],
+                              fontSize: 13.0,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 25.0,
-                    ),
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: SizedBox(
-                        height: 70,
-                        child: Consumer(builder: (context, ref, _) {
-                          return Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: AppConstants.socialLoginDatas
-                                .map((e) => Padding(
-                              padding: const EdgeInsets.all(4.0),
-                              child: InkWell(
-                                onTap: e.onTap,
-                                child: Container(
-                                  width: 30,
-                                  height: 30,
-                                  margin: const EdgeInsets.all(5),
-                                  child: Center(
-                                    child: FaIcon(
-                                      e.iconData,
-                                      color: MyThemes.lightTheme.scaffoldBackgroundColor,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ))
-                                .toList(),
-                          );
-                        }),
+                      const SizedBox(
+                        height: 25.0,
                       ),
-                    ),
-                  ],
+                      MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: SizedBox(
+                          height: 70,
+                          child: Consumer(builder: (context, ref, _) {
+                            return Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: AppConstants.socialLoginDatas
+                                  .map((e) => Padding(
+                                        padding: const EdgeInsets.all(4.0),
+                                        child: InkWell(
+                                          onTap: e.onTap,
+                                          child: Container(
+                                            width: 30,
+                                            height: 30,
+                                            margin: const EdgeInsets.all(5),
+                                            child: Center(
+                                              child: FaIcon(
+                                                e.iconData,
+                                                color: MyThemes.lightTheme
+                                                    .scaffoldBackgroundColor,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ))
+                                  .toList(),
+                            );
+                          }),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
           ),
         ),
-        image: Image.asset(AppConstants.guySvg,),
+        image: Image.asset(
+          AppConstants.guySvg,
+        ),
       ),
     );
 
