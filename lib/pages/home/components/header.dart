@@ -29,7 +29,7 @@ class HeaderLogo extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "D",
+                    text: "Damian",
                     style: GoogleFonts.josefinSans(
                       fontSize: 26.0,
                       fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class HeaderLogo extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: "T",
+                    text: "Tochukwu",
                     style: GoogleFonts.josefinSans(
                       color: kPrimaryColor,
                       fontSize: 26.0,

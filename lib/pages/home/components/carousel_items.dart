@@ -107,43 +107,43 @@ List<CarouselItemModel> carouselItems(
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 25.0,
+                    ),
+                    MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: SizedBox(
+                        height: 70,
+                        child: Consumer(builder: (context, ref, _) {
+                          return Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: AppConstants.socialLoginDatas
+                                .map((e) => Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: InkWell(
+                                onTap: e.onTap,
+                                child: Container(
+                                  width: 30,
+                                  height: 30,
+                                  margin: const EdgeInsets.all(5),
+                                  child: Center(
+                                    child: FaIcon(
+                                      e.iconData,
+                                      color: MyThemes.lightTheme.scaffoldBackgroundColor,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ))
+                                .toList(),
+                          );
+                        }),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              Align(
-                alignment: Alignment.bottomRight,
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: SizedBox(
-                    height: 70,
-                    child: Consumer(builder: (context, ref, _) {
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: AppConstants.socialLoginDatas
-                            .map((e) => Padding(
-                                  padding: const EdgeInsets.all(4.0),
-                                  child: InkWell(
-                                    onTap: e.onTap,
-                                    child: Container(
-                                      width: 30,
-                                      height: 30,
-                                      margin: const EdgeInsets.all(5),
-                                      child: Center(
-                                        child: FaIcon(
-                                          e.iconData,
-                                          color: MyThemes.lightTheme.scaffoldBackgroundColor,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ))
-                            .toList(),
-                      );
-                    }),
-                  ),
-                ),
-              )
             ],
           ),
         ),

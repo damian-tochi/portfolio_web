@@ -7,10 +7,10 @@ class Utilty {
     }
   }
 
-  static Future<void> openMail() => openUrl("mailto:agnelselvan007@gmail.com");
+  static Future<void> openMail() => openUrl("mailto:nkwocha.damian@gmail.com");
 
   static Future<void> openMyLocation() =>
-      openUrl("https://goo.gl/maps/YDFt3w2xWAu3nwD17");
-  static Future<void> openMyPhoneNo() => openUrl("tel:+91-9167877725");
-  static Future<void> openWhatsapp() => openUrl("https://wa.me/9167877725");
+      openUrl("https://maps.app.goo.gl/oa6Y59cZiKACfPNL6");
+  static Future<void> openMyPhoneNo() => openUrl("tel:+2348066855471");
+  static Future<void> openWhatsapp() => openUrl("https://wa.me/8066855471");
 }

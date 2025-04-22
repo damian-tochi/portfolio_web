@@ -16,9 +16,8 @@ double getMobileMaxWidth(BuildContext context) =>
 
 class AppConstants {
   static const linkedInUrl = "https://www.linkedin.com/in/nkwocha-damian-tochukwu/";
-  static const instagramUrl = "https://www.instagram.com/_agnel.selvan_/";
   static const githubUrl = "https://github.com/damian-tochi";
-  static const mediumUrl = "https://docs.google.com/document/d/1dhz-IGUwOKq_VPqn_MPeOAfeZo9d_wUfPwhNKBl0-Hw/edit?usp=drive_link";
+  static const resumeUrl = "https://docs.google.com/document/d/1dhz-IGUwOKq_VPqn_MPeOAfeZo9d_wUfPwhNKBl0-Hw/edit?usp=drive_link";
 
   static const _assets = "assets/";
   static const _outputs = "outputs/";
@@ -28,7 +27,7 @@ class AppConstants {
   static const guySvg = "${_svg}android-avatar.png";
   static const person = "${_images}image.png";
 
-
+  
   static const _techImages = "${_images}technology/";
   static const flutterImage = _techImages + "flutter.png";
   static const pythonImage = _techImages + "python.png";
@@ -72,12 +71,6 @@ class AppConstants {
           Utilty.openUrl(linkedInUrl);
         }),
     NameOnTap(
-        title: "Instagram",
-        iconData: FontAwesomeIcons.instagram,
-        onTap: () {
-          Utilty.openUrl(instagramUrl);
-        }),
-    NameOnTap(
         title: "Github",
         iconData: FontAwesomeIcons.github,
         onTap: () {
@@ -87,7 +80,7 @@ class AppConstants {
         title: "CV",
         iconData: Icons.article,
         onTap: () {
-          Utilty.openUrl(mediumUrl);
+          Utilty.openUrl(resumeUrl);
         }),
   ];
 }

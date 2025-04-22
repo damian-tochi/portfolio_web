@@ -10,15 +10,15 @@ final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.location_on,
       title: "ADDRESS",
-      text1: "Mumbai, Maharashtra",
-      text2: "India",
+      text1: "Ibeju-Lekki, Lagos",
+      text2: "Nigeria",
       onTap: () {
         Utilty.openMyLocation();
       }),
   FooterItem(
       iconData: Icons.phone,
       title: "PHONE",
-      text1: "+91 9167877725",
+      text1: "+2348 0668 55471",
       text2: "",
       onTap: () {
         Utilty.openMyPhoneNo();
@@ -26,7 +26,7 @@ final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.mail,
       title: "EMAIL",
-      text1: "agnelselvan007@gmail.com",
+      text1: "nkwocha.damian@gmail.com",
       text2: "",
       onTap: () {
         Utilty.openMail();
@@ -34,7 +34,7 @@ final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.sms,
       title: "WHATSAPP",
-      text1: "+91 9167877725",
+      text1: "+2348 0668 55471",
       text2: "",
       onTap: () {
         Utilty.openWhatsapp();
@@ -64,6 +64,30 @@ Widget _buildUi(double width, BuildContext context) {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(
+                height: 20,
+              ),
+              Text(
+                "Contact Me",
+                style: GoogleFonts.josefinSans(
+                  fontWeight: FontWeight.w900,
+                  height: 1.3,
+                  fontSize: 35.0,
+                ),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Text(
+                "Easy ways to reach me",
+                style: GoogleFonts.josefinSans(
+                  color: Colors.grey[400],
+                  fontSize: 14.0,
+                ),
+              ),
+              SizedBox(
+                height: ScreenHelper.isDesktop(context) ? 40 : 20,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 50.0),
                 child: Wrap(

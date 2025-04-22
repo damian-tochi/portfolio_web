@@ -60,7 +60,7 @@ class HomeProvider extends ChangeNotifier {
     } else if (nameOnTap.title == "About") {
       scrollToAbout();
     } else if (nameOnTap.title == "CV") {
-      Utilty.openUrl(AppConstants.mediumUrl);
+      Utilty.openUrl(AppConstants.resumeUrl);
     }
   }
 }
