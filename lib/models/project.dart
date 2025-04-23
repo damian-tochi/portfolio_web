@@ -144,11 +144,11 @@ class ProjectModel {
     ),
     ProjectModel(
       project: "Python",
-      title: "Personal Face and Emotion Recognition",
+      title: "Document Chat App",
       description:
-          "The model will recognize each face and identify their name based on the trained model. CNN is used for training the dataset.",
+          "Python web app that analyzes documents and answers questions using NLP with FuzzyWuzzy and Hugging Face for enhanced conversational responses.",
       appPhotos: AppConstants.pythonDocumentAnalyserImage,
-      projectLink: "https://github.com/AgnelSelvan/Emotion-Recognition.git",
+      projectLink: "https://github.com/damian-tochi/analize_me",
       techUsed: [
         TechnologyConstants.python,
         TechnologyConstants.flask,
