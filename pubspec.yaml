@@ -29,6 +29,9 @@ dependencies:
   meta_seo: ^3.0.7
   scroll_to_id: ^1.5.1
   flutter_screenutil: ^5.5.4
+  cached_network_image: ^3.4.1
+  pretty_animated_buttons: ^0.0.2
+  transparent_image: ^2.0.1
   dart_fusion:
     git:
       url: https://github.com/Nialixus/dart_fusion.git

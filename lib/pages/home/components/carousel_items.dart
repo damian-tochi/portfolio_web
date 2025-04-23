@@ -8,6 +8,8 @@ import 'package:my_portfolio/models/carousel_item_model.dart';
 import 'package:my_portfolio/provider/theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../widgets/cached_image.dart';
+
 List<CarouselItemModel> carouselItems(
         double carouselContainerHeight, BuildContext context) =>
     List.generate(
@@ -152,9 +154,10 @@ List<CarouselItemModel> carouselItems(
             ],
           ),
         ),
-        image: Image.asset(
-          AppConstants.guySvg,
-        ),
+        image: const CachedImage(
+          imageUrl: AppConstants.guySvg,
+          fit: BoxFit.fill,
+        )
       ),
     );
 

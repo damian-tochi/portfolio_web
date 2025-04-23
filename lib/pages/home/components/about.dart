@@ -7,6 +7,8 @@ import 'package:my_portfolio/provider/theme.dart';
 import 'package:my_portfolio/core/utils/constants.dart';
 import 'package:my_portfolio/core/utils/screen_helper.dart';
 
+import '../../../widgets/cached_image.dart';
+
 class AboutSection extends StatefulWidget {
   const AboutSection({Key? key}) : super(key: key);
 
@@ -155,10 +157,16 @@ class _AboutSectionState extends State<AboutSection> {
                   flex: 1,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(300),
-                    child: Image.asset(
-                      AppConstants.person,
+                    child: CachedImage(
+                      imageUrl: AppConstants.person,
                       width: constraints.maxWidth > 980.0 ? null : 550.0,
+                      radius: constraints.maxWidth / 8,
+                      fit: BoxFit.fill,
                     ),
+                    // Image.asset(
+                    //   AppConstants.person,
+                    //   width: constraints.maxWidth > 980.0 ? null : 550.0,
+                    // ),
                   ),
                 ),
             ],

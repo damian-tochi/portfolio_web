@@ -7,6 +7,7 @@ import 'package:my_portfolio/core/utils/screen_helper.dart';
 import 'package:my_portfolio/core/utils/utils.dart';
 import 'package:my_portfolio/models/project.dart';
 import 'package:my_portfolio/provider/theme.dart';
+import 'package:pretty_animated_buttons/widgets/pretty_wave_button.dart';
 
 class WorkSection extends StatelessWidget {
   final List<ProjectModel> projects;
@@ -70,7 +71,7 @@ class WorkSection extends StatelessWidget {
                   SizedBox(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           projectModel.project,
@@ -131,40 +132,26 @@ class WorkSection extends StatelessWidget {
                           height: 25.0,
                         ),
                         if (projectModel.buttonText != null)
-                          Row(
-                          children: [
-                            MouseRegion(
+                          MouseRegion(
                               cursor: SystemMouseCursors.click,
-                              child: SizedBox(
-                                height: 50,
-                                child: ElevatedButton(
-                                  style: const ButtonStyle(
-                                    backgroundColor: MaterialStatePropertyAll(
-                                      kPrimaryColor,
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    if (projectModel.internalLink) {
-                                      context.goNamed(projectModel.projectLink);
-                                    } else {
-                                      Utilty.openUrl(projectModel.projectLink);
-                                    }
-                                  },
-                                  child: Center(
-                                    child: Text(
-                                      (projectModel.buttonText!.toUpperCase()),
-                                      style: const TextStyle(
-                                        fontSize: 13.0,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
+                              child: PrettyWaveButton(
+                                verticalPadding: 8,
+                                horizontalPadding: 80,
+                                backgroundColor: Colors.orange,
+                                child: Text(
+                                  (projectModel.buttonText!.toUpperCase()),
+                                  style: const TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
                                 ),
+                                onPressed: () {
+                                  if (projectModel.internalLink) {
+                                    Utilty.openUrl(projectModel.projectLink);
+                                  }
+                                },
                               ),
                             ),
-                          ],
-                        )
                       ],
                     ),
                   )
