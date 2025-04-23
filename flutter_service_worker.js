@@ -40,7 +40,7 @@ const RESOURCES = {"canvaskit/skwasm.js": "694fda5704053957c2594de355805228",
 "assets/assets/images/technology/javascript.png": "2e5de0a7d635b437db088d43f847d39c",
 "assets/assets/images/technology/swift.png": "6740f74615e8d2b6558d7d31fc7edb1e",
 "assets/assets/images/technology/flutter.png": "47e4c5ea380dc3b9241ee7b4f8b65c20",
-"assets/assets/images/technology/nestjs-logo.png": "157f61aa9603683a074d31aea30ce928",
+"assets/assets/images/technology/nestjs-logo.png": "69c1af485509a20dedc6e60259bc94c5",
 "assets/assets/images/technology/flask.png": "8615243e0ddaab150399cf0eca65a5ff",
 "assets/assets/images/technology/razorpay.png": "368b761622d88029de7be2aadff6b7d3",
 "assets/assets/images/technology/firebase.png": "d139ba1e59d9bcc1ed86617547dd51ee",
@@ -72,7 +72,7 @@ const RESOURCES = {"canvaskit/skwasm.js": "694fda5704053957c2594de355805228",
 "icons/Icon-maskable-192.png": "030b23a6fb958a4d423b0b78bb197569",
 "manifest.json": "9e18ab1bbf3c3868922f7be7d8a0896e",
 "favicon.png": "2b6b7c76117c52994e8e2e740cd93db4",
-"flutter_bootstrap.js": "daf99173e79c661a6bc926cd6efdb0cd"};
+"flutter_bootstrap.js": "6caf2a8e44bb51f2ccdac108a8fcc8a9"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
