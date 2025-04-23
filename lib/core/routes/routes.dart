@@ -1,19 +1,13 @@
 import 'package:go_router/go_router.dart';
-// import 'package:life_from_simple_rules/screens/home.dart';
-import 'package:my_portfolio/pages/demo/demo.dart';
 import 'package:my_portfolio/pages/home/home.dart';
 import 'package:my_portfolio/pages/json_to_dart/json_to_dart.dart';
 import 'package:my_portfolio/pages/video_downloader/video_downloader.dart';
 import 'package:my_portfolio/pages/works/works.dart';
-// import 'package:sand_simulation/home.dart';
 
 
 class Routes {
   static const String initial = "/";
-  static const String demos = "demos";
   static const String myWorks = "works";
-  static const String simulation = "simulation";
-  static const String sandSimulation = "simulation/sand";
   static const String jsonToDart = "json_to_dart";
   static const String videoDownloader = "video_downloader";
   static const String smartBillBookPrivacy = "smart_bill_book/privacy";
@@ -27,29 +21,11 @@ class RouterGenerator {
         builder: (context, state) => const Home(),
         routes: [
           GoRoute(
-            path: Routes.demos,
-            name: Routes.demos,
-            builder: (context, state) =>
-                const DemoScreen(),
-          ),
-          GoRoute(
             path: Routes.myWorks,
             name: Routes.myWorks,
             builder: (context, state) =>
                 const MyWorksScreen(),
           ),
-          // GoRoute(
-          //   path: Routes.simulation,
-          //   name: Routes.simulation,
-          //   builder: (context, state) =>
-          //       const ParticleScreen(),
-          // ),
-          // GoRoute(
-          //   path: Routes.sandSimulation,
-          //   name: Routes.sandSimulation,
-          //   builder: (context, state) =>
-          //       const SandSimulationScreen(),
-          // ),
           GoRoute(
             path: Routes.jsonToDart,
             name: Routes.jsonToDart,

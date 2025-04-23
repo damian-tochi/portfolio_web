@@ -146,7 +146,8 @@ class ProjectSection extends StatelessWidget {
                           const SizedBox(
                             height: 25.0,
                           ),
-                          Row(
+                          if (projectModel.buttonText != null)
+                            Row(
                             children: [
                               MouseRegion(
                                 cursor: SystemMouseCursors.click,
@@ -169,9 +170,7 @@ class ProjectSection extends StatelessWidget {
                                     },
                                     child: Center(
                                       child: Text(
-                                        (projectModel.buttonText ??
-                                                "Explore MORE")
-                                            .toUpperCase(),
+                                        (projectModel.buttonText)!.toUpperCase(),
                                         style: TextStyle(
                                           fontSize: 13.0,
                                           fontWeight: FontWeight.bold,
@@ -187,10 +186,6 @@ class ProjectSection extends StatelessWidget {
                         ],
                       ),
                     )
-                    // Expanded(
-                    //   flex: constraints.maxWidth > 720.0 ? 1 : 0,
-                    //   child: ,
-                    // )
                   ],
                 ),
               );

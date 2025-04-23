@@ -89,25 +89,18 @@ class _HomeState extends ConsumerState<Home>
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            GestureDetector(
-                              onTap: () {
-                                context.goNamed(
-                                  Routes.simulation,
-                                );
-                              },
-                              child: Text(
+                            Text(
                                 "My Works",
                                 style: GoogleFonts.josefinSans(
                                   fontWeight: FontWeight.w900,
                                   fontSize: 36,
                                 ),
-                              ),
                             ),
                             const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              "Here are some of my Previous Work :)",
+                              "A couple of my recent works",
                               style: GoogleFonts.josefinSans(
                                 color: Colors.grey[400],
                                 fontSize: 14,

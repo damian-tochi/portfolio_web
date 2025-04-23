@@ -46,14 +46,14 @@ class AppConstants {
 
 
   static const _projectsImages = _images + "projects/";
-  static const smartStoreImage = _projectsImages + "1.jpeg";
-  static const crossTheRoadImage = _projectsImages + "2.jpeg";
-  static const newsUpImage = _projectsImages + "3.jpeg";
-  static const musicLabImage = _projectsImages + "4.jpeg";
-  static const personalFaceImage = _projectsImages + "5.jpeg";
-  static const computerStoreImage = _projectsImages + "6.jpeg";
-  static const jsonToDartImage = _projectsImages + "7.png";
-  static const simulationImage = _projectsImages + "8.png";
+  static const stararrivalHotel = _projectsImages + "1.png";
+  static const uduxImage = _projectsImages + "2.png";
+  static const gryndApp = _projectsImages + "3.png";
+  static const delonifera = _projectsImages + "4.png";
+  static const mySchoolLibImage = _projectsImages + "5.png";
+  static const blueCallImage = _projectsImages + "6.png";
+  static const hycabImage = _projectsImages + "7.jpeg";
+  static const pythonDocumentAnalyserImage = _projectsImages + "8.png";
 
   static const _gifs = _outputs + "gif/";
   static const portfolioGif = _gifs + "mobile.gif";

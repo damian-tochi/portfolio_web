@@ -130,7 +130,8 @@ class WorkSection extends StatelessWidget {
                         const SizedBox(
                           height: 25.0,
                         ),
-                        Row(
+                        if (projectModel.buttonText != null)
+                          Row(
                           children: [
                             MouseRegion(
                               cursor: SystemMouseCursors.click,
@@ -151,13 +152,11 @@ class WorkSection extends StatelessWidget {
                                   },
                                   child: Center(
                                     child: Text(
-                                      (projectModel.buttonText ??
-                                              "Explore MORE")
-                                          .toUpperCase(),
-                                      style: TextStyle(
+                                      (projectModel.buttonText!.toUpperCase()),
+                                      style: const TextStyle(
                                         fontSize: 13.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey[800],
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ),
