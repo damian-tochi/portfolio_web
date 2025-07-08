@@ -43,6 +43,7 @@ class AppConstants {
   static const androidImage = _techImages + "android_icon.png";
   static const kotlinImage = _techImages + "kotlin_Icon.png";
   static const nestJsImage = _techImages + "nestjs-logo.png";
+  static const typeScriptImage = _techImages + "typescript-logo.png";
 
 
   static const _projectsImages = _images + "projects/";
@@ -53,6 +54,7 @@ class AppConstants {
   static const mySchoolLibImage = _projectsImages + "5.png";
   static const blueCallImage = _projectsImages + "6.png";
   static const hycabImage = _projectsImages + "7.jpeg";
+  static const nexiumImage = _projectsImages + "9.png";
   static const pythonDocumentAnalyserImage = _projectsImages + "8.png";
 
   static const _gifs = _outputs + "gif/";

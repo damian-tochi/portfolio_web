@@ -14,13 +14,13 @@ class Assets {
   static const String outputs4 = 'outputs/4.png';
   static const String outputs5 = 'outputs/5.png';
   static const String outputs6 = 'outputs/6.png';
-  static const String projects1 = 'assets/images/projects/1.jpeg';
-  static const String projects2 = 'assets/images/projects/2.jpeg';
-  static const String projects3 = 'assets/images/projects/3.jpeg';
-  static const String projects4 = 'assets/images/projects/4.jpeg';
-  static const String projects5 = 'assets/images/projects/5.jpeg';
-  static const String projects6 = 'assets/images/projects/6.jpeg';
-  static const String projects7 = 'assets/images/projects/7.png';
+  static const String projects1 = 'assets/images/projects/1.png';
+  static const String projects2 = 'assets/images/projects/2.png';
+  static const String projects3 = 'assets/images/projects/3.png';
+  static const String projects4 = 'assets/images/projects/4.png';
+  static const String projects5 = 'assets/images/projects/5.png';
+  static const String projects6 = 'assets/images/projects/6.png';
+  static const String projects7 = 'assets/images/projects/7.jpeg';
   static const String projects8 = 'assets/images/projects/8.png';
   static const String socialEmail = 'assets/images/social/email.png';
   static const String socialGithub = 'assets/images/social/github.png';
@@ -37,10 +37,14 @@ class Assets {
   static const String technologyJava = 'assets/images/technology/java.png';
   static const String technologyJavascript = 'assets/images/technology/javascript.png';
   static const String technologyKotlinIcon = 'assets/images/technology/kotlin_Icon.png';
+  static const String technologyNestjsLogo = 'assets/images/technology/nestjs-logo.png';
   static const String technologyPhp = 'assets/images/technology/php.png';
   static const String technologyPython = 'assets/images/technology/python.png';
   static const String technologyRazorpay = 'assets/images/technology/razorpay.png';
   static const String technologyScenekit = 'assets/images/technology/scenekit.jpeg';
+  static const String technologyStararrivalHotel = 'assets/images/technology/stararrival_hotel.png';
   static const String technologySwift = 'assets/images/technology/swift.png';
+  static const String technologyTypescriptLogo = 'assets/images/technology/typescript-logo.png';
+  static const String technologyUdux = 'assets/images/technology/udux.png';
 
 }

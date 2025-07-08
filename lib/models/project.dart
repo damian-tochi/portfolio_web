@@ -27,14 +27,44 @@ class ProjectModel {
 
   static List<ProjectModel> projects = [
     ProjectModel(
-      project: "Frontend",
-      title: "Futur Xchange",
+      project: "Android App",
+      title: "Pupil Manager(Offline First)",
       description:
-          "Involved in the frontend development of an internal fintech tool, implementing responsive UI components, integrating APIs, and optimizing user workflows.",
+      "A Kotlin-based Android application designed to work seamlessly as it features both offline and online capabilities. It implements an offline-first architecture, allowing users to create, update, delete, and sync pupil data even without network access.",
+      appPhotos: AppConstants.androidImage,
+      projectLink: "https://github.com/damian-tochi/PupilManager",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Repo Link",
+    ),
+    ProjectModel(
+      project: "Frontend",
+      title: "Nexium Finance",
+      description:
+      "Developed the frontend for Nexium Finance, a Web3 decentralized finance (DeFi) platform, using NestJS and TypeScript.\nFocused on building a secure and scalable application with a user-friendly interface, ensuring seamless interaction with blockchain technology.",
+      appPhotos: AppConstants.nexiumImage,
+      projectLink: "https://www.nexium.finance/",
+      techUsed: [
+        TechnologyConstants.nestJs,
+        TechnologyConstants.javascript,
+        TechnologyConstants.typeScript,
+      ],
+      internalLink: true,
+      buttonText: "Website Link",
+    ),
+    ProjectModel(
+      project: "Frontend",
+      title: "Futur Exchange",
+      description:
+          "Involved in the frontend development of an internal fintech tool, implementing responsive UI components, integrating APIs, and optimizing user workflows.\nDue to a Non-Disclosure Agreement (NDA), specific project details cannot be disclosed.",
       appPhotos: AppConstants.nestJsImage,
       projectLink: "",
       techUsed: [
         TechnologyConstants.nestJs,
+        TechnologyConstants.typeScript,
       ],
     ),
     ProjectModel(
@@ -116,6 +146,7 @@ class ProjectModel {
         TechnologyConstants.android,
         TechnologyConstants.java,
       ],
+      internalLink: true,
       buttonText: "Product Link",
     ),
     ProjectModel(
@@ -128,6 +159,7 @@ class ProjectModel {
       techUsed: [
         TechnologyConstants.javascript,
       ],
+      internalLink: true,
       buttonText: "Product Link",
     ),
     ProjectModel(
@@ -153,6 +185,7 @@ class ProjectModel {
         TechnologyConstants.python,
         TechnologyConstants.flask,
       ],
+      internalLink: true,
       buttonText: "Repo Link",
     ),
     ProjectModel(
@@ -178,6 +211,7 @@ class ProjectModel {
         TechnologyConstants.nestJs,
         TechnologyConstants.javascript,
       ],
+      internalLink: true,
       buttonText: "Repo Link",
     ),
   ];

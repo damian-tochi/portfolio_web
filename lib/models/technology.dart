@@ -29,6 +29,8 @@ class TechnologyConstants {
       TechnologyModel("Swift", AppConstants.swiftImage);
   static TechnologyModel sceneKit =
       TechnologyModel("SceneKit", AppConstants.sceneKitImage);
+  static TechnologyModel typeScript =
+      TechnologyModel("TypeScript", AppConstants.typeScriptImage);
 
   static List<TechnologyModel> technologyLearned = [
     flutter,
@@ -38,5 +40,6 @@ class TechnologyConstants {
     python,
     javascript,
     nestJs,
+    typeScript
   ];
 }
