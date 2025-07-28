@@ -1,6 +1,3 @@
-# my_portfolio
-
-My portfolio
 
 # my_portfolio
 This is my portfolio project. It showcases my skills and projects in a structured format.
