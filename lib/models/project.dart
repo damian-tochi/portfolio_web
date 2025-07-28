@@ -27,6 +27,20 @@ class ProjectModel {
 
   static List<ProjectModel> projects = [
     ProjectModel(
+      project: "Movemate App UI",
+      title: "Movemate App UI created by Musemind and shared on Dribbble",
+      description:
+      "Android kotlin application attempting to translate the UI created by Musemind, it features a modern, fluid Android user interface using fragments, custom bottom navigation, shared ViewModel communication, and smooth animations for improved user experience.",
+      appPhotos: AppConstants.movemateImage,
+      projectLink: "https://github.com/damian-tochi/Movemate",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Repo Link",
+    ),
+    ProjectModel(
       project: "Android App",
       title: "Pupil Manager(Offline First)",
       description:

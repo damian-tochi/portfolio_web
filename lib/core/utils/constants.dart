@@ -25,7 +25,7 @@ class AppConstants {
 
   static const _svg = "${_assets}svg/";
   static const guySvg = "${_svg}android-avatar.png";
-  static const person = "${_images}image.png";
+  static const person = "${_images}image.jpg";
 
   
   static const _techImages = "${_images}technology/";
@@ -55,6 +55,7 @@ class AppConstants {
   static const blueCallImage = _projectsImages + "6.png";
   static const hycabImage = _projectsImages + "7.jpeg";
   static const nexiumImage = _projectsImages + "9.png";
+  static const movemateImage = _projectsImages + "10.png";
   static const pythonDocumentAnalyserImage = _projectsImages + "8.png";
 
   static const _gifs = _outputs + "gif/";
