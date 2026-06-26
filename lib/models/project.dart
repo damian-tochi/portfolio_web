@@ -27,10 +27,56 @@ class ProjectModel {
 
   static List<ProjectModel> projects = [
     ProjectModel(
-      project: "Movemate App",
+      project: "Flutter",
+      title: "GarmentCare App",
+      description:
+      "Built and maintained a cross-platform mobile application for GarmentCare using Flutter, delivering a responsive experience across Android and iOS. Focused on scalable architecture, performance optimization, and seamless API integration to support a reliable production application.",
+      appPhotos: AppConstants.garmentCareImage,
+      projectLink: "https://play.google.com/store/apps/details?id=com.mobile.garmentcareltd&hl=en",
+      techUsed: [
+        TechnologyConstants.flutter,
+        TechnologyConstants.android,
+        TechnologyConstants.swift,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Playstore Link",
+    ),
+    ProjectModel(
+      project: "Android",
+      title: "Goldbucks App",
+      description:
+      "Developed and maintained core Android features for Goldbucks, improving app stability, performance, and user experience. Collaborated with backend teams to deliver secure financial workflows and production-ready releases.",
+      appPhotos: AppConstants.goldbucksImage,
+      projectLink: "https://play.google.com/store/apps/details?id=ng.alertmfb.alertsavings&hl=en",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Playstore Link",
+    ),
+    ProjectModel(
+      project: "Flutter",
+      title: "EasySpend App",
+      description:
+      "Built a cross-platform expense management application with Flutter, featuring intuitive budgeting tools, transaction tracking, and a responsive user interface designed for a seamless mobile experience.",
+      appPhotos: AppConstants.easySpendImage,
+      projectLink: "https://play.google.com/store/search?q=easyspend&c=apps&hl=en",
+      techUsed: [
+        TechnologyConstants.flutter,
+        TechnologyConstants.android,
+        TechnologyConstants.swift,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Playstore Link",
+    ),
+    ProjectModel(
+      project: "Android",
       title: "Movemate App UI ",
       description:
-      "Android kotlin application attempting to translate the Movemate UI created by Musemind and shared on Dribble, it features a modern, fluid Android user interface using fragments, custom bottom navigation, shared ViewModel communication, and smooth animations for improved user experience.",
+      "Recreated the Movemate concept from a Musemind design using native Android (Kotlin), showcasing modern Android architecture, Fragments, Shared ViewModels, custom navigation, and polished animations.",
       appPhotos: AppConstants.movemateImage,
       projectLink: "https://github.com/damian-tochi/Movemate",
       techUsed: [
@@ -41,10 +87,10 @@ class ProjectModel {
       buttonText: "Repo Link",
     ),
     ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "Pupil Manager(Offline First)",
       description:
-      "A Kotlin-based Android application designed to work seamlessly as it features both offline and online capabilities. It implements an offline-first architecture, allowing users to create, update, delete, and sync pupil data even without network access.",
+      "Built an offline-first Android application using Kotlin, enabling users to manage pupil records without network connectivity. Implemented local persistence, synchronization, and conflict resolution for a seamless offline-to-online experience.",
       appPhotos: AppConstants.androidImage,
       projectLink: "https://github.com/damian-tochi/PupilManager",
       techUsed: [
@@ -58,7 +104,7 @@ class ProjectModel {
       project: "Frontend",
       title: "Nexium Finance",
       description:
-      "Developed the frontend for Nexium Finance, a Web3 decentralized finance (DeFi) platform, using NestJS and TypeScript.\nFocused on building a secure and scalable application with a user-friendly interface, ensuring seamless interaction with blockchain technology.",
+      "Developed the frontend of a Web3 DeFi platform using TypeScript. Built responsive interfaces and integrated blockchain-powered workflows while emphasizing security, scalability, and performance.",
       appPhotos: AppConstants.nexiumImage,
       projectLink: "https://www.nexium.finance/",
       techUsed: [
@@ -73,7 +119,7 @@ class ProjectModel {
       project: "Frontend",
       title: "Futur Exchange",
       description:
-          "Involved in the frontend development of an internal fintech tool, implementing responsive UI components, integrating APIs, and optimizing user workflows.\nDue to a Non-Disclosure Agreement (NDA), specific project details cannot be disclosed.",
+          "Contributed to the frontend development of an internal fintech platform, building responsive interfaces, integrating APIs, and streamlining user workflows. Additional project details remain confidential under NDA.",
       appPhotos: AppConstants.nestJsImage,
       projectLink: "",
       techUsed: [
@@ -82,7 +128,7 @@ class ProjectModel {
       ],
     ),
     ProjectModel(
-      project: "Flutter App",
+      project: "Flutter",
       title: "Chanelle MFB",
       description:
       "Established the mobile infrastructure for Chanelle, a mobile banking application built with Flutter for cross-platform support on Android and iOS.\nFocused on delivering a secure, scalable, and high-performance application while ensuring a consistent user experience across both platforms.\nDue to a Non-Disclosure Agreement (NDA), specific project details cannot be disclosed.",
@@ -96,10 +142,10 @@ class ProjectModel {
       ],
     ),
     ProjectModel(
-      project: "Flutter App",
+      project: "Flutter",
       title: "uduX Music Player",
       description:
-          "Established the mobile infrastructure for uduX, a music streaming app designed to rival Spotify in the African market.\nBuilt the native Android infrastructure using Kotlin, ensuring high performance and platform-specific optimizations. Additionally, developed the Flutter cross-platform infrastructure, enabling a unified codebase for both Android and iOS while maintaining a consistent and responsive user experience.\nFocused on optimizing streaming quality, minimizing latency, and delivering a visually appealing and responsive user interface. Collaborated on product design to align with market expectations and user preferences.",
+          "Architected the mobile foundation for a music streaming platform using Flutter and native Android (Kotlin). Optimized streaming performance, reduced latency, and built reusable cross-platform infrastructure while collaborating closely with product and design teams.",
       appPhotos: AppConstants.uduxImage,
       projectLink: "https://udux.com",
       techUsed: [
@@ -110,10 +156,10 @@ class ProjectModel {
       ],
     ),
     ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "Grynd",
       description:
-          "Collaborated with cross-functional teams to develop the Grynd app, an innovative approach to farming. Implemented automated testing procedures to ensure quality assurance standards were met. Developed native Android applications and frameworks using Kotlin,and Implemented caching mechanism to reduce data usage. Engineered robust app architecture and complex user interfaces. Applied expert knowledge of Android system frameworks to solve complicated problems.",
+          "Developed native Android features for an agri-tech platform, implementing scalable architecture, offline caching, automated testing, and intuitive user experiences to improve reliability in low-connectivity environments.",
       appPhotos: AppConstants.gryndApp,
       projectLink: "",
       techUsed: [
@@ -123,9 +169,9 @@ class ProjectModel {
       ],
     ),
     ProjectModel(
-      project: "Android & iOS App",
+      project: "Android & iOS",
       title: "Delonifera TV",
-      description: "Developed and implemented content access restrictions on the Delonifera TV mobile app for both Android and iOS platforms, creating a clear distinction between freemium and premium user experiences.\nFor freemium users, restricted viewing access to a 20-minute clip of any selected movie, ensuring limited yet engaging content exposure. Integrated ads into the freemium experience, interrupting movies at strategic intervals and prompting users to upgrade for an uninterrupted viewing experience.",
+      description: "Developed premium content access controls across Android and iOS, implementing subscription-based viewing restrictions and ad-supported freemium experiences while maintaining a seamless playback experience.",
       appPhotos: AppConstants.delonifera,
       internalLink: true,
       projectLink: "https://play.google.com/store/apps/details?id=com.app.delonifera&pcampaignid=web_share",
@@ -136,10 +182,10 @@ class ProjectModel {
       buttonText: "Playstore Link",
     ),
     ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "My School Library",
       description:
-          "Assigned to resolve issues on the MySchoolLibrary mobile app, focusing on UI enhancements, in-app payments, and PDF file upload functionality for the admin panel.\nLeveraged Java and Kotlin to address and optimize UI issues, ensuring responsiveness across all screen sizes. Rewrote most of the XML layouts, replacing outdated RelativeLayouts with ConstraintLayouts, using constrained percentages for height and width to improve scalability and design consistency.\nImplemented Flutterwave for seamless local payments and Stripe for international transactions, enhancing the app’s payment capabilities. Followed best practices of Test-Driven Development (TDD) to maintain app stability and performance.",
+          "Modernized an existing Android application by redesigning the UI, improving layout scalability, integrating Flutterwave and Stripe payments, and enhancing document upload functionality for administrators.",
       appPhotos: AppConstants.mySchoolLibImage,
       internalLink: true,
       projectLink: "https://play.google.com/store/apps/details?id=com.education.books.MySchoolLibrary&pcampaignid=web_share",
@@ -151,9 +197,9 @@ class ProjectModel {
       buttonText: "Product Link",
     ),
     ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "Blue Call",
-      description: "Assigned to resolve issues on the Bluecall mobile app, specifically fixing the broken in-app calling and messaging features.\nLeveraged the Sinch library to restore and optimize real-time communication capabilities, ensuring reliable and high-quality voice calls and messaging. Integrated Firebase for backend support, enabling efficient data synchronization and real-time updates.\nApplied Java and Kotlin to troubleshoot and resolve performance issues, following best practices of Test-Driven Development (TDD) to maintain app stability and performance. Focused on product design enhancements and optimization, ensuring a seamless and responsive user experience.\nLive on all app stores.",
+      description: "Restored and optimized real-time voice calling and messaging using Sinch and Firebase, improving communication reliability, application performance, and overall user experience.",
       appPhotos: AppConstants.blueCallImage,
       projectLink: "https://play.google.com/store/apps/details?id=com.free.talk.alh.global.im&pcampaignid=web_share",
       techUsed: [
@@ -164,23 +210,10 @@ class ProjectModel {
       buttonText: "Product Link",
     ),
     ProjectModel(
-      project: "Web App",
-      title: "Star Arrival Hotel Website",
-      description:
-          "Designed and developed a responsive hotel website using modern web technologies, ensuring optimal performance, user experience, and cross-device compatibility.",
-      appPhotos: AppConstants.stararrivalHotel,
-      projectLink: "http://stararrivalhotels.com/",
-      techUsed: [
-        TechnologyConstants.javascript,
-      ],
-      internalLink: true,
-      buttonText: "Product Link",
-    ),
-    ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "HyCab",
       description:
-          "Architected and developed a fully functional ride-sharing mobile app similar to Bolt for a client. Leveraged Java and Kotlin to build a robust and scalable application with an intuitive user interface. Integrated third-party APIs like Google Maps API and Google Places API to allow users to fetch their current location, input their destination, and match with a driver seamlessly.\nImplemented Stripe for secure and efficient payments, ensuring a smooth transaction process. Followed best practices of Test-Driven Development (TDD) to maintain stability and optimize app performance. Utilized SOAP protocols for certain backend communications, ensuring reliable data exchange.",
+          "Architected and developed a ride-hailing application with real-time location tracking, Google Maps integration, driver matching, and secure Stripe payments, emphasizing scalability and performance.",
       appPhotos: AppConstants.hycabImage,
       projectLink: "",
       techUsed: [
@@ -192,7 +225,7 @@ class ProjectModel {
       project: "Python",
       title: "Document Chat App",
       description:
-          "Python web app that analyzes documents and answers questions using NLP with FuzzyWuzzy and Hugging Face for enhanced conversational responses.",
+          "Built an AI-powered document assistant using Python, Flask, Hugging Face, and FuzzyWuzzy, enabling users to upload documents and ask natural language questions with contextual responses.",
       appPhotos: AppConstants.pythonDocumentAnalyserImage,
       projectLink: "https://github.com/damian-tochi/analize_me",
       techUsed: [
@@ -203,10 +236,10 @@ class ProjectModel {
       buttonText: "Repo Link",
     ),
     ProjectModel(
-      project: "Android App",
+      project: "Android",
       title: "VPN Browser",
       description:
-      "Contracted on Upwork to resolve UI, AppActivity, and dependency issues for a VPN application.\nOptimized the user interface by removing redundant UI elements and enhancing responsiveness and visual consistency across devices.\nCreated a BaseActivity class to manage system-wide activity processes and lifecycle, improving code reusability and reducing redundancy.\nUpdated and optimized packages handling network calls, ensuring stable and efficient connectivity.\nLeveraged Java and Kotlin for Android development, following best practices in mobile app development, troubleshooting, and optimization.",
+      "Modernized an Android VPN application by improving UI consistency, refactoring application architecture, resolving dependency issues, and optimizing networking components for greater stability.",
       appPhotos: AppConstants.androidImage,
       projectLink: "",
       techUsed: [
@@ -218,7 +251,7 @@ class ProjectModel {
     ProjectModel(
       project: "Backend",
       title: "Logistics App Backend",
-      description: "RESTful API for a logistics/courier service built with NestJS, featuring authentication, order creation, tracking, and user management.",
+      description: "Built a RESTful logistics API with NestJS, implementing authentication, shipment management, real-time tracking, and user management using scalable backend architecture.",
       appPhotos: AppConstants.nestJsImage,
       projectLink: "https://github.com/damian-tochi/courier-service",
       techUsed: [

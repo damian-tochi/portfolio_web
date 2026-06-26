@@ -17,7 +17,7 @@ double getMobileMaxWidth(BuildContext context) =>
 class AppConstants {
   static const linkedInUrl = "https://www.linkedin.com/in/nkwocha-damian-tochukwu/";
   static const githubUrl = "https://github.com/damian-tochi";
-  static const resumeUrl = "https://docs.google.com/document/d/1dhz-IGUwOKq_VPqn_MPeOAfeZo9d_wUfPwhNKBl0-Hw/edit?usp=drive_link";
+  static const resumeUrl = "https://docs.google.com/document/d/16yNrbaqQdlj23EXxHh5u52i7ZErJ7b1p/edit?usp=sharing&ouid=112364117774160592927&rtpof=true&sd=true";
 
   static const _assets = "assets/";
   static const _outputs = "outputs/";
@@ -57,6 +57,9 @@ class AppConstants {
   static const nexiumImage = _projectsImages + "9.png";
   static const movemateImage = _projectsImages + "10.png";
   static const pythonDocumentAnalyserImage = _projectsImages + "8.png";
+  static const easySpendImage = _projectsImages + "11.png";
+  static const goldbucksImage = _projectsImages + "12.png";
+  static const garmentCareImage = _projectsImages + "13.png";
 
   static const _gifs = _outputs + "gif/";
   static const portfolioGif = _gifs + "mobile.gif";
