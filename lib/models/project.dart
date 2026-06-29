@@ -263,4 +263,63 @@ class ProjectModel {
     ),
   ];
 
+  static List<ProjectModel> libraries = [
+    ProjectModel(
+      project: "Android",
+      title: "NameForge",
+      description:
+      "NameForge is a high-performance Kotlin Multiplatform library that generates intelligent, aesthetically balanced, low-collision username suggestions in real-time. Built for modern applications requiring unique, memorable, and brandable digital identities.",
+      appPhotos: AppConstants.androidImage,
+      projectLink: "https://github.com/damian-tochi/NameForge",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Repo Link",
+    ),
+    ProjectModel(
+      project: "Android",
+      title: "CommPath",
+      description:
+      "A lightweight Android Kotlin library that simplifies communication and transactions between modules in multi-module applications through a single entry-point class.",
+      appPhotos: AppConstants.androidImage,
+      projectLink: "https://github.com/damian-tochi/CommPath",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Playstore Link",
+    ),
+    ProjectModel(
+      project: "Android",
+      title: "NFCfy",
+      description:
+      "NFCfy SDK abstracts Android's NFC APIs into a clean, coroutine-friendly, lifecycle-safe interface. It enables developers to scan, read, and write NFC tags with minimal setup and predictable behavior across devices.",
+      appPhotos: AppConstants.androidImage,
+      projectLink: "https://github.com/damian-tochi/NFCfy",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Repo Link",
+    ),
+    ProjectModel(
+      project: "Android",
+      title: "QuickAnim",
+      description:
+      "A powerful, lightweight Android animation library written in Kotlin that provides easy-to-use animation utilities and pre-built animations for Views and RecyclerViews. QuickAnim simplifies complex animations with a clean, fluent API.",
+      appPhotos: AppConstants.androidImage,
+      projectLink: "https://github.com/damian-tochi/QuickAnim",
+      techUsed: [
+        TechnologyConstants.android,
+        TechnologyConstants.kotlin,
+      ],
+      internalLink: true,
+      buttonText: "Repo Link",
+    ),
+  ];
+
 }

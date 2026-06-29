@@ -15,6 +15,7 @@ import 'package:my_portfolio/pages/home/components/about.dart';
 import 'package:my_portfolio/pages/home/components/carousel.dart';
 import 'package:my_portfolio/pages/home/components/footer.dart';
 import 'package:my_portfolio/pages/home/components/header.dart';
+import 'package:my_portfolio/pages/home/components/libraries_section.dart';
 import 'package:my_portfolio/pages/home/components/project.dart';
 import 'package:my_portfolio/pages/home/components/service.dart';
 import 'package:my_portfolio/provider/amplitutde.dart';
@@ -56,8 +57,7 @@ class _HomeState extends ConsumerState<Home>
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 45.0, vertical: 60),
             child: ScrollConfiguration(
-              behavior:
-                  ScrollConfiguration.of(context).copyWith(scrollbars: false),
+              behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
                 child: Column(
@@ -140,6 +140,68 @@ class _HomeState extends ConsumerState<Home>
                     ),
                     ProjectSection(
                       projects: ProjectModel.projects.take(4).toList(),
+                    ),
+                    const SizedBox(
+                      height: 50.0,
+                    ),
+                    FadeInLeft(
+                      duration: const Duration(milliseconds: 1900),
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Libraries",
+                              style: GoogleFonts.josefinSans(
+                                fontWeight: FontWeight.w900,
+                                fontSize: 36,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              "My Libraries mostly opensource",
+                              style: GoogleFonts.josefinSans(
+                                color: Colors.grey[400],
+                                fontSize: 14,
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                margin: const EdgeInsets.only(right: 10),
+                                child: InkWell(
+                                  onTap: () {
+                                    context.goNamed(
+                                      Routes.libraries,
+                                    );
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "View All",
+                                      style: GoogleFonts.josefinSans(
+                                        color: kPrimaryColor,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 14,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 15,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    LibrariesSection(
+                      projects: ProjectModel.libraries.toList(),
                     ),
                     const SizedBox(
                       height: 50.0,

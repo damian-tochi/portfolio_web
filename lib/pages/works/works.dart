@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/models/project.dart';
 import 'package:my_portfolio/pages/home/components/footer.dart';
+import 'package:my_portfolio/pages/home/components/libraries_section.dart';
 import 'package:my_portfolio/pages/works/components/work_section.dart';
 import 'package:my_portfolio/core/utils/screen_helper.dart';
 import 'package:my_portfolio/widgets/header.dart';
@@ -67,6 +68,43 @@ class _DemoScreenState extends ConsumerState<MyWorksScreen> {
                 )),
                 WorkSection(
                   projects: ProjectModel.projects,
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const SizedBox(
+                        height: 90,
+                      ),
+                      Text(
+                        "My Libraries",
+                        style: GoogleFonts.josefinSans(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 36,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        "My open source libraries",
+                        style: GoogleFonts.josefinSans(
+                          color: Colors.grey[400],
+                          fontSize: 14,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      )
+                    ],
+                  ),
+                ),
+                LibrariesSection(
+                  projects: ProjectModel.libraries.toList(),
                 ),
                 const Footer()
               ],

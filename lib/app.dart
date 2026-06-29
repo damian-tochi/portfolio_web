@@ -1,5 +1,4 @@
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
-import 'package:dart_fusion/dart_fusion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_portfolio/core/routes/routes.dart';
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
                 const Breakpoint(start: 1921, end: double.infinity, name: '4K'),
               ],
             ),
-            scrollBehavior: const DBehavior(),
           ),
         );
       },

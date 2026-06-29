@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:my_portfolio/pages/home/home.dart';
 import 'package:my_portfolio/pages/json_to_dart/json_to_dart.dart';
+import 'package:my_portfolio/pages/libraries/libraries_page.dart';
 import 'package:my_portfolio/pages/video_downloader/video_downloader.dart';
 import 'package:my_portfolio/pages/works/works.dart';
 
@@ -10,6 +11,7 @@ class Routes {
   static const String myWorks = "works";
   static const String jsonToDart = "json_to_dart";
   static const String videoDownloader = "video_downloader";
+  static const String libraries = "libraries";
   static const String smartBillBookPrivacy = "smart_bill_book/privacy";
 }
 
@@ -37,6 +39,12 @@ class RouterGenerator {
             name: Routes.videoDownloader,
             builder: (context, state) =>
                 const VideoDownloaderScreen(),
+          ),
+          GoRoute(
+            path: Routes.libraries,
+            name: Routes.libraries,
+            builder: (context, state) =>
+            const LibrariesPage(),
           ),
         ],
       ),
