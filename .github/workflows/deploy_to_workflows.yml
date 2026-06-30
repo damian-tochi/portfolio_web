@@ -41,7 +41,7 @@ jobs:
 
       # Build the web app
       - name: Build Flutter Web
-        run: flutter build web --release --base-href /my_portfolio/
+        run: flutter build web --release --base-href /portfolio_web/
 
       # Deploy to GitHub Pages
       - name: Deploy
