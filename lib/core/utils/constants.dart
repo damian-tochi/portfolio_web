@@ -18,6 +18,7 @@ class AppConstants {
   static const linkedInUrl = "https://www.linkedin.com/in/nkwocha-damian-tochukwu/";
   static const githubUrl = "https://github.com/damian-tochi";
   static const resumeUrl = "https://docs.google.com/document/d/16yNrbaqQdlj23EXxHh5u52i7ZErJ7b1p/edit?usp=sharing&ouid=112364117774160592927&rtpof=true&sd=true";
+  static const resumeDownloadUrl = "https://github.com/damian-tochi/damian-tochi.github.io/raw/main/assets/pdfs/Damian_Nkwocha_CV.pdf";
 
   static const _assets = "assets/";
   static const _outputs = "outputs/";

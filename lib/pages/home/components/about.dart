@@ -49,9 +49,8 @@ class _AboutSectionState extends State<AboutSection> {
                 ),
 
                 const SizedBox(height: 25),
-
                 Text(
-                  "I'm Damian Tochukwu, a Software Engineer specializing in mobile platforms. I design and build high-performance Android, iOS, and Flutter applications with a strong emphasis on scalable architecture, performance, and developer experience. I also enjoy building backend systems and integrating AI-powered experiences into modern mobile applications.",
+                  "I'm Damian Tochukwu, a Software Engineer building scalable, high-performance products across mobile and backend systems. I specialize in Android (Kotlin/Java), Flutter, iOS (SwiftUI), and modern backend technologies, with a strong focus on AI-powered experiences, offline-first architecture, and reliable distributed systems.",
                   style: GoogleFonts.josefinSans(
                     fontWeight: FontWeight.bold,
                     height: 1.3,
@@ -62,10 +61,10 @@ class _AboutSectionState extends State<AboutSection> {
                 const SizedBox(height: 10),
 
                 const Text(
-                  "Over the past 7+ years, I've delivered production software across fintech, media, logistics, and enterprise products, with applications published on both the Play Store and App Store. My work spans native Android, SwiftUI, Flutter, Kotlin Multiplatform, backend development, and AI integration—from modular mobile architectures to intelligent features powered by Large Language Models. I'm currently pursuing an MSc in Computer Science at the Federal University of Technology Owerri (FUTO), where my research explores AI-driven agricultural product enhancement. Outside of work, you'll usually find me building side projects, experimenting with emerging technologies, or refining developer workflows.",
+                  "Over the last 7+ years, I've shipped production software reaching 800K+ downloads across fintech, education, media, and enterprise products. From architecting offline-first mobile systems to integrating LLMs and leading cross-platform engineering efforts, I enjoy solving difficult technical problems while building products that scale. I'm equally comfortable writing production code, shaping system architecture, mentoring engineers, and turning ambitious ideas into reliable software.",
                   style: TextStyle(
                     color: kCaptionColor,
-                    height: 1.5,
+                    height: 1.6,
                     fontSize: 15,
                   ),
                 ),

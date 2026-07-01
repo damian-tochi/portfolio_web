@@ -8,6 +8,8 @@ import 'package:my_portfolio/core/utils/utils.dart';
 import 'package:my_portfolio/models/project.dart';
 import 'package:my_portfolio/provider/theme.dart';
 
+import '../../../widgets/project_card.dart';
+
 class ProjectSection extends StatefulWidget {
   const ProjectSection({
     super.key,
@@ -85,12 +87,12 @@ class _ProjectSectionState extends State<ProjectSection> {
         : 560.0;
 
     return SizedBox(
-      height: height,
+      // height: height,
       child: Stack(
         alignment: Alignment.center,
         children: [
           SizedBox(
-            height: height,
+            // height: height,
             child: SingleChildScrollView(
               controller: _scrollController,
               scrollDirection: Axis.horizontal,
@@ -98,13 +100,7 @@ class _ProjectSectionState extends State<ProjectSection> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: widget.projects
                     .map(
-                      (project) => Container(
-                    margin: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 15,
-                    ),
-                    child: _buildProject(width, project),
-                  ),
+                      (project) => ProjectCard(project: project)
                 )
                     .toList(),
               ),
@@ -304,3 +300,4 @@ class _ScrollButton extends StatelessWidget {
     );
   }
 }
+
